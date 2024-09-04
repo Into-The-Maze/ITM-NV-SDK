@@ -1,0 +1,17 @@
+C:\Users\dylan\Documents\GitHub\ITM-NV-SDK\ITM-NV-SDK\bin\Debug\net8.0-windows\ITM-NV-SDK.exe
+C:\Users\dylan\Documents\GitHub\ITM-NV-SDK\ITM-NV-SDK\bin\Debug\net8.0-windows\ITM-NV-SDK.deps.json
+C:\Users\dylan\Documents\GitHub\ITM-NV-SDK\ITM-NV-SDK\bin\Debug\net8.0-windows\ITM-NV-SDK.runtimeconfig.json
+C:\Users\dylan\Documents\GitHub\ITM-NV-SDK\ITM-NV-SDK\bin\Debug\net8.0-windows\ITM-NV-SDK.dll
+C:\Users\dylan\Documents\GitHub\ITM-NV-SDK\ITM-NV-SDK\bin\Debug\net8.0-windows\ITM-NV-SDK.pdb
+C:\Users\dylan\Documents\GitHub\ITM-NV-SDK\ITM-NV-SDK\obj\Debug\net8.0-windows\ITM_NV_SDK.FRM_MAIN.resources
+C:\Users\dylan\Documents\GitHub\ITM-NV-SDK\ITM-NV-SDK\obj\Debug\net8.0-windows\ITM-NV-SDK.csproj.GenerateResource.cache
+C:\Users\dylan\Documents\GitHub\ITM-NV-SDK\ITM-NV-SDK\obj\Debug\net8.0-windows\ITM-NV-SDK.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dylan\Documents\GitHub\ITM-NV-SDK\ITM-NV-SDK\obj\Debug\net8.0-windows\ITM-NV-SDK.AssemblyInfoInputs.cache
+C:\Users\dylan\Documents\GitHub\ITM-NV-SDK\ITM-NV-SDK\obj\Debug\net8.0-windows\ITM-NV-SDK.AssemblyInfo.cs
+C:\Users\dylan\Documents\GitHub\ITM-NV-SDK\ITM-NV-SDK\obj\Debug\net8.0-windows\ITM-NV-SDK.csproj.CoreCompileInputs.cache
+C:\Users\dylan\Documents\GitHub\ITM-NV-SDK\ITM-NV-SDK\obj\Debug\net8.0-windows\ITM-NV-SDK.sourcelink.json
+C:\Users\dylan\Documents\GitHub\ITM-NV-SDK\ITM-NV-SDK\obj\Debug\net8.0-windows\ITM-NV-SDK.dll
+C:\Users\dylan\Documents\GitHub\ITM-NV-SDK\ITM-NV-SDK\obj\Debug\net8.0-windows\refint\ITM-NV-SDK.dll
+C:\Users\dylan\Documents\GitHub\ITM-NV-SDK\ITM-NV-SDK\obj\Debug\net8.0-windows\ITM-NV-SDK.pdb
+C:\Users\dylan\Documents\GitHub\ITM-NV-SDK\ITM-NV-SDK\obj\Debug\net8.0-windows\ITM-NV-SDK.genruntimeconfig.cache
+C:\Users\dylan\Documents\GitHub\ITM-NV-SDK\ITM-NV-SDK\obj\Debug\net8.0-windows\ref\ITM-NV-SDK.dll
