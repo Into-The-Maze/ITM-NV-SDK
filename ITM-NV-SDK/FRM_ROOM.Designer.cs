@@ -28,7 +28,12 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FRM_ROOM));
             SPC_separator = new SplitContainer();
             TLP_roomContainer = new TableLayoutPanel();
+            BTN_Export = new Button();
+            BTN_edit = new Button();
+            CBX_art = new ComboBox();
+            BTN_globalApply = new Button();
             CHK_wall = new CheckBox();
+            LBL_info = new Label();
             ((System.ComponentModel.ISupportInitialize)SPC_separator).BeginInit();
             SPC_separator.Panel1.SuspendLayout();
             SPC_separator.Panel2.SuspendLayout();
@@ -47,6 +52,11 @@
             // 
             // SPC_separator.Panel2
             // 
+            SPC_separator.Panel2.Controls.Add(LBL_info);
+            SPC_separator.Panel2.Controls.Add(BTN_Export);
+            SPC_separator.Panel2.Controls.Add(BTN_edit);
+            SPC_separator.Panel2.Controls.Add(CBX_art);
+            SPC_separator.Panel2.Controls.Add(BTN_globalApply);
             SPC_separator.Panel2.Controls.Add(CHK_wall);
             SPC_separator.Size = new Size(650, 417);
             SPC_separator.SplitterDistance = 416;
@@ -67,6 +77,49 @@
             TLP_roomContainer.Size = new Size(200, 100);
             TLP_roomContainer.TabIndex = 0;
             TLP_roomContainer.CellPaint += TLP_roomContainer_CellPaint;
+            TLP_roomContainer.MouseDown += TLP_roomContainer_MouseDown;
+            // 
+            // BTN_Export
+            // 
+            BTN_Export.BackColor = SystemColors.ControlDark;
+            BTN_Export.ForeColor = SystemColors.ControlLightLight;
+            BTN_Export.Location = new Point(15, 359);
+            BTN_Export.Name = "BTN_Export";
+            BTN_Export.Size = new Size(203, 46);
+            BTN_Export.TabIndex = 4;
+            BTN_Export.Text = "Export as JSON to clipboard";
+            BTN_Export.UseVisualStyleBackColor = false;
+            // 
+            // BTN_edit
+            // 
+            BTN_edit.BackColor = SystemColors.ControlDark;
+            BTN_edit.ForeColor = SystemColors.ControlLightLight;
+            BTN_edit.Location = new Point(15, 68);
+            BTN_edit.Name = "BTN_edit";
+            BTN_edit.Size = new Size(203, 23);
+            BTN_edit.TabIndex = 3;
+            BTN_edit.Text = "Edit entities";
+            BTN_edit.UseVisualStyleBackColor = false;
+            // 
+            // CBX_art
+            // 
+            CBX_art.DropDownStyle = ComboBoxStyle.DropDownList;
+            CBX_art.FormattingEnabled = true;
+            CBX_art.Location = new Point(75, 10);
+            CBX_art.Name = "CBX_art";
+            CBX_art.Size = new Size(143, 23);
+            CBX_art.TabIndex = 2;
+            // 
+            // BTN_globalApply
+            // 
+            BTN_globalApply.BackColor = SystemColors.ControlDark;
+            BTN_globalApply.ForeColor = SystemColors.ControlLightLight;
+            BTN_globalApply.Location = new Point(15, 39);
+            BTN_globalApply.Name = "BTN_globalApply";
+            BTN_globalApply.Size = new Size(203, 23);
+            BTN_globalApply.TabIndex = 1;
+            BTN_globalApply.Text = "Apply this tileset to all similar tiles";
+            BTN_globalApply.UseVisualStyleBackColor = false;
             // 
             // CHK_wall
             // 
@@ -78,6 +131,16 @@
             CHK_wall.TabIndex = 0;
             CHK_wall.Text = "Wall?";
             CHK_wall.UseVisualStyleBackColor = true;
+            // 
+            // LBL_info
+            // 
+            LBL_info.AutoSize = true;
+            LBL_info.ForeColor = SystemColors.ControlLight;
+            LBL_info.Location = new Point(15, 97);
+            LBL_info.Name = "LBL_info";
+            LBL_info.Size = new Size(189, 135);
+            LBL_info.TabIndex = 5;
+            LBL_info.Text = resources.GetString("LBL_info.Text");
             // 
             // FRM_ROOM
             // 
@@ -102,5 +165,10 @@
         private SplitContainer SPC_separator;
         private TableLayoutPanel TLP_roomContainer;
         private CheckBox CHK_wall;
+        private ComboBox CBX_art;
+        private Button BTN_globalApply;
+        private Button BTN_edit;
+        private Button BTN_Export;
+        private Label LBL_info;
     }
 }

@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITM-NV-SDK", "ITM-NV-SDK.csproj", "{EB404F88-D544-4763-B06E-309E5CC2CFB2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ITM-NV-SDK", "ITM-NV-SDK.csproj", "{EB404F88-D544-4763-B06E-309E5CC2CFB2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
