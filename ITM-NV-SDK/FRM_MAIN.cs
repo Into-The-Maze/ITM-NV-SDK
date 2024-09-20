@@ -7,7 +7,10 @@ namespace ITM_NV_SDK
         }
 
         private void BTN_selectRoom_Click(object sender, EventArgs e) {
-
+            FRM_CONFIGURE_ROOM configWindow = new();
+            Hide();
+            configWindow.FormClosed += (s, args) => Close();
+            configWindow.ShowDialog();
         }
     }
 }

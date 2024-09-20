@@ -7,12 +7,16 @@
       "RelativeMoniker": "D:0:0:{EB404F88-D544-4763-B06E-309E5CC2CFB2}|ITM-NV-SDK.csproj|solutionrelative:frm_room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EB404F88-D544-4763-B06E-309E5CC2CFB2}|ITM-NV-SDK.csproj|c:\\users\\dylan\\documents\\github\\itm-nv-sdk\\itm-nv-sdk\\frm_main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{EB404F88-D544-4763-B06E-309E5CC2CFB2}|ITM-NV-SDK.csproj|solutionrelative:frm_main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{EB404F88-D544-4763-B06E-309E5CC2CFB2}|ITM-NV-SDK.csproj|c:\\users\\dylan\\documents\\github\\itm-nv-sdk\\itm-nv-sdk\\frm_room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB404F88-D544-4763-B06E-309E5CC2CFB2}|ITM-NV-SDK.csproj|solutionrelative:frm_room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EB404F88-D544-4763-B06E-309E5CC2CFB2}|ITM-NV-SDK.csproj|c:\\users\\dylan\\documents\\github\\itm-nv-sdk\\itm-nv-sdk\\frm_main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB404F88-D544-4763-B06E-309E5CC2CFB2}|ITM-NV-SDK.csproj|solutionrelative:frm_main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EB404F88-D544-4763-B06E-309E5CC2CFB2}|ITM-NV-SDK.csproj|c:\\users\\dylan\\documents\\github\\itm-nv-sdk\\itm-nv-sdk\\globals.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB404F88-D544-4763-B06E-309E5CC2CFB2}|ITM-NV-SDK.csproj|solutionrelative:globals.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB404F88-D544-4763-B06E-309E5CC2CFB2}|ITM-NV-SDK.csproj|c:\\users\\dylan\\documents\\github\\itm-nv-sdk\\itm-nv-sdk\\frm_configure_room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EB404F88-D544-4763-B06E-309E5CC2CFB2}|ITM-NV-SDK.csproj|solutionrelative:frm_configure_room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,8 +26,46 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FRM_CONFIGURE_ROOM.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\dylan\\Documents\\GitHub\\ITM-NV-SDK\\ITM-NV-SDK\\FRM_CONFIGURE_ROOM.cs",
+              "RelativeDocumentMoniker": "FRM_CONFIGURE_ROOM.cs",
+              "ToolTip": "C:\\Users\\dylan\\Documents\\GitHub\\ITM-NV-SDK\\ITM-NV-SDK\\FRM_CONFIGURE_ROOM.cs [Design]",
+              "RelativeToolTip": "FRM_CONFIGURE_ROOM.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-20T16:47:00.054Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Globals.cs",
+              "DocumentMoniker": "C:\\Users\\dylan\\Documents\\GitHub\\ITM-NV-SDK\\ITM-NV-SDK\\Globals.cs",
+              "RelativeDocumentMoniker": "Globals.cs",
+              "ToolTip": "C:\\Users\\dylan\\Documents\\GitHub\\ITM-NV-SDK\\ITM-NV-SDK\\Globals.cs",
+              "RelativeToolTip": "Globals.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-20T16:20:17.799Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FRM_ROOM.cs",
+              "DocumentMoniker": "C:\\Users\\dylan\\Documents\\GitHub\\ITM-NV-SDK\\ITM-NV-SDK\\FRM_ROOM.cs",
+              "RelativeDocumentMoniker": "FRM_ROOM.cs",
+              "ToolTip": "C:\\Users\\dylan\\Documents\\GitHub\\ITM-NV-SDK\\ITM-NV-SDK\\FRM_ROOM.cs",
+              "RelativeToolTip": "FRM_ROOM.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAASwC4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-20T15:40:24.806Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -35,31 +77,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-04T17:29:24.024Z",
               "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FRM_MAIN.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\dylan\\Documents\\GitHub\\ITM-NV-SDK\\ITM-NV-SDK\\FRM_MAIN.cs",
-              "RelativeDocumentMoniker": "FRM_MAIN.cs",
-              "ToolTip": "C:\\Users\\dylan\\Documents\\GitHub\\ITM-NV-SDK\\ITM-NV-SDK\\FRM_MAIN.cs [Design]",
-              "RelativeToolTip": "FRM_MAIN.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-04T17:29:00.537Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FRM_MAIN.cs",
-              "DocumentMoniker": "C:\\Users\\dylan\\Documents\\GitHub\\ITM-NV-SDK\\ITM-NV-SDK\\FRM_MAIN.cs",
-              "RelativeDocumentMoniker": "FRM_MAIN.cs",
-              "ToolTip": "C:\\Users\\dylan\\Documents\\GitHub\\ITM-NV-SDK\\ITM-NV-SDK\\FRM_MAIN.cs",
-              "RelativeToolTip": "FRM_MAIN.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-04T17:26:28.653Z",
-              "EditorCaption": ""
             }
           ]
         }

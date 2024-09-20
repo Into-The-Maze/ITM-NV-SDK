@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ITM-NV-SDK")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f81b02df4697675458ceda0058c42fc7479b463d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5a051a8b9be75b47aaaee751a042cd2fc262e253")]
 [assembly: System.Reflection.AssemblyProductAttribute("ITM-NV-SDK")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ITM-NV-SDK")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
