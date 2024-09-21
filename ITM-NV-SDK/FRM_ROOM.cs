@@ -1,14 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Diagnostics;
-using System.DirectoryServices.ActiveDirectory;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using Newtonsoft.Json;
 
 namespace ITM_NV_SDK
 {
@@ -158,7 +148,7 @@ namespace ITM_NV_SDK
             }
             else {
                 BTN_edit.Enabled = true;
-            } 
+            }
 
             if (!dontUpdateConsole)
                 RTB_console.Text += $"Cell at x:{selectedRoomCell.x}, y:{selectedRoomCell.y} successfully changed to {(CHK_wall.Checked ? "wall" : "floor")}!\n";
@@ -202,7 +192,13 @@ namespace ITM_NV_SDK
             RTB_console.Text += $"Editing cell at x:{selectedRoomCell.x}, y:{selectedRoomCell.y}!\n";
             editor.ShowDialog();
             RTB_console.Text += "Ended!\n";
-            
+
+        }
+
+        private void BTN_Export_Click(object sender, EventArgs e) {
+            string roomJSON = JsonConvert.SerializeObject(room);
+            Clipboard.SetText(roomJSON);
+            RTB_console.Text += "Room copied to clipboard!\n";
         }
     }
 }

@@ -115,6 +115,7 @@
             BTN_Export.TabIndex = 4;
             BTN_Export.Text = "Export as JSON to clipboard";
             BTN_Export.UseVisualStyleBackColor = false;
+            BTN_Export.Click += BTN_Export_Click;
             // 
             // BTN_edit
             // 
