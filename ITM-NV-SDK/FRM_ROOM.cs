@@ -61,7 +61,7 @@ namespace ITM_NV_SDK
                 e.Graphics.FillRectangle(Brushes.Black, e.CellBounds);
 
             else if (room.cells[e.Row, e.Column].EntitiesToSpawn.Count > 0) //cell with entities
-                e.Graphics.FillEllipse(Brushes.Pink, e.CellBounds);
+                e.Graphics.FillEllipse(Brushes.HotPink, e.CellBounds);
 
             else //empty floor
                 e.Graphics.FillRectangle(Brushes.LightGray, e.CellBounds);
