@@ -28,6 +28,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FRM_ROOM));
             SPC_separator = new SplitContainer();
             TLP_roomContainer = new TableLayoutPanel();
+            BTN_deselect = new Button();
             RTB_console = new RichTextBox();
             LBL_info = new Label();
             BTN_Export = new Button();
@@ -53,6 +54,7 @@
             // 
             // SPC_separator.Panel2
             // 
+            SPC_separator.Panel2.Controls.Add(BTN_deselect);
             SPC_separator.Panel2.Controls.Add(RTB_console);
             SPC_separator.Panel2.Controls.Add(LBL_info);
             SPC_separator.Panel2.Controls.Add(BTN_Export);
@@ -63,6 +65,7 @@
             SPC_separator.Size = new Size(684, 461);
             SPC_separator.SplitterDistance = 457;
             SPC_separator.TabIndex = 0;
+            SPC_separator.KeyDown += SPC_separator_KeyDown;
             // 
             // TLP_roomContainer
             // 
@@ -81,19 +84,33 @@
             TLP_roomContainer.CellPaint += TLP_roomContainer_CellPaint;
             TLP_roomContainer.MouseDown += TLP_roomContainer_MouseDown;
             // 
+            // BTN_deselect
+            // 
+            BTN_deselect.BackColor = SystemColors.ControlDark;
+            BTN_deselect.ForeColor = SystemColors.ControlLightLight;
+            BTN_deselect.Location = new Point(15, 235);
+            BTN_deselect.Name = "BTN_deselect";
+            BTN_deselect.Size = new Size(203, 28);
+            BTN_deselect.TabIndex = 7;
+            BTN_deselect.Text = "Deselect";
+            BTN_deselect.UseVisualStyleBackColor = false;
+            BTN_deselect.Click += BTN_deselect_Click;
+            BTN_deselect.KeyDown += BTN_deselect_KeyDown;
+            // 
             // RTB_console
             // 
             RTB_console.BackColor = SystemColors.ControlDark;
             RTB_console.Font = new Font("Segoe UI", 6.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             RTB_console.ForeColor = SystemColors.Window;
-            RTB_console.Location = new Point(15, 235);
+            RTB_console.Location = new Point(15, 269);
             RTB_console.Name = "RTB_console";
             RTB_console.ReadOnly = true;
             RTB_console.ScrollBars = RichTextBoxScrollBars.None;
-            RTB_console.Size = new Size(203, 162);
+            RTB_console.Size = new Size(203, 128);
             RTB_console.TabIndex = 6;
             RTB_console.Text = "";
             RTB_console.TextChanged += RTB_console_TextChanged;
+            RTB_console.KeyDown += RTB_console_KeyDown;
             // 
             // LBL_info
             // 
@@ -116,6 +133,7 @@
             BTN_Export.Text = "Export as JSON to clipboard";
             BTN_Export.UseVisualStyleBackColor = false;
             BTN_Export.Click += BTN_Export_Click;
+            BTN_Export.KeyDown += BTN_Export_KeyDown;
             // 
             // BTN_edit
             // 
@@ -128,6 +146,7 @@
             BTN_edit.Text = "Edit entities";
             BTN_edit.UseVisualStyleBackColor = false;
             BTN_edit.Click += BTN_edit_Click;
+            BTN_edit.KeyDown += BTN_edit_KeyDown;
             // 
             // CBX_art
             // 
@@ -138,6 +157,7 @@
             CBX_art.Size = new Size(143, 23);
             CBX_art.TabIndex = 2;
             CBX_art.SelectedIndexChanged += CBX_art_SelectedIndexChanged;
+            CBX_art.KeyDown += CBX_art_KeyDown;
             // 
             // BTN_globalApply
             // 
@@ -150,6 +170,7 @@
             BTN_globalApply.Text = "Apply this tileset to all similar tiles";
             BTN_globalApply.UseVisualStyleBackColor = false;
             BTN_globalApply.Click += BTN_globalApply_Click;
+            BTN_globalApply.KeyDown += BTN_globalApply_KeyDown;
             // 
             // CHK_wall
             // 
@@ -162,6 +183,7 @@
             CHK_wall.Text = "Wall?";
             CHK_wall.UseVisualStyleBackColor = true;
             CHK_wall.CheckedChanged += CHK_wall_CheckedChanged;
+            CHK_wall.KeyDown += CHK_wall_KeyDown;
             // 
             // FRM_ROOM
             // 
@@ -175,6 +197,7 @@
             MaximizeBox = false;
             Name = "FRM_ROOM";
             Text = "Design Room";
+            KeyDown += FRM_ROOM_KeyDown;
             SPC_separator.Panel1.ResumeLayout(false);
             SPC_separator.Panel2.ResumeLayout(false);
             SPC_separator.Panel2.PerformLayout();
@@ -194,5 +217,6 @@
         private Button BTN_Export;
         private Label LBL_info;
         private RichTextBox RTB_console;
+        private Button BTN_deselect;
     }
 }

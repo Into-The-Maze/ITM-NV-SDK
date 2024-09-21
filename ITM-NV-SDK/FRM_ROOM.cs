@@ -17,6 +17,8 @@ namespace ITM_NV_SDK
         public FRM_ROOM(int width, int height, string name) {
             InitializeComponent();
 
+            Text = $"Design room: {name}";
+
             this.width = width;
             this.height = height;
             this.name = name;
@@ -39,9 +41,9 @@ namespace ITM_NV_SDK
                 TLP_roomContainer.RowStyles.Add(new RowStyle(SizeType.Absolute, G.TLP_CELL_PIXEL_SIZE));
             }
 
-            room = new Room(width, height, name);
-            for (int i = 0; i < height; i++) {
-                for (int j = 0; j < width; j++) {
+            room = new Room(this.width, this.height, this.name);
+            for (int i = 0; i < room.height; i++) {
+                for (int j = 0; j < room.width; j++) {
                     room.cells[i, j] = new Cell(j, i);
                 }
             }
@@ -84,7 +86,7 @@ namespace ITM_NV_SDK
                 CBX_art.Enabled = false;
                 BTN_edit.Enabled = false;
                 BTN_globalApply.Enabled = false;
-                CBX_art.SelectedValue = null;
+                CBX_art.SelectedIndex = -1;
             }
 
             TLP_roomContainer.Refresh();
@@ -199,6 +201,110 @@ namespace ITM_NV_SDK
             string roomJSON = JsonConvert.SerializeObject(room);
             Clipboard.SetText(roomJSON);
             RTB_console.Text += "Room copied to clipboard!\n";
+        }
+
+        private void BTN_deselect_Click(object sender, EventArgs e) {
+            selectedCell = null;
+            selectedRoomCell = null;
+            CHK_wall.Enabled = false;
+            CBX_art.Enabled = false;
+            BTN_edit.Enabled = false;
+            BTN_globalApply.Enabled = false;
+            CBX_art.SelectedIndex = -1;
+            TLP_roomContainer.Refresh();
+        }
+
+        #region keyHandlers
+        private void FRM_ROOM_KeyDown(object sender, KeyEventArgs e) {
+            if (selectedCell == null) return;
+            HandleWASD(e);
+        }
+
+        private void SPC_separator_KeyDown(object sender, KeyEventArgs e) {
+            if (selectedCell == null) return;
+            HandleWASD(e);
+        }
+
+        private void CHK_wall_KeyDown(object sender, KeyEventArgs e) {
+            if (selectedCell == null) return;
+            HandleWASD(e);
+        }
+
+        private void CBX_art_KeyDown(object sender, KeyEventArgs e) {
+            if (selectedCell == null) return;
+            HandleWASD(e);
+        }
+
+        private void BTN_globalApply_KeyDown(object sender, KeyEventArgs e) {
+            if (selectedCell == null) return;
+            HandleWASD(e);
+        }
+
+        private void BTN_edit_KeyDown(object sender, KeyEventArgs e) {
+            if (selectedCell == null) return;
+            HandleWASD(e);
+        }
+
+        private void BTN_deselect_KeyDown(object sender, KeyEventArgs e) {
+            if (selectedCell == null) return;
+            HandleWASD(e);
+        }
+
+        private void RTB_console_KeyDown(object sender, KeyEventArgs e) {
+            if (selectedCell == null) return;
+            HandleWASD(e);
+        }
+
+        private void BTN_Export_KeyDown(object sender, KeyEventArgs e) {
+            if (selectedCell == null) return;
+            HandleWASD(e);
+        }
+        #endregion
+
+        private void HandleWASD(KeyEventArgs e) {
+            switch (e.KeyCode) {
+                case Keys.W:
+                    if (selectedCell.Value.Y - 1 >= 0) {
+                        selectedCell = new Point(selectedCell.Value.X, selectedCell.Value.Y - 1);
+                    }
+                    break;
+
+                case Keys.A:
+                    if (selectedCell.Value.X - 1 >= 0) {
+                        selectedCell = new Point(selectedCell.Value.X - 1, selectedCell.Value.Y);
+                    }
+                    break;
+
+                case Keys.S:
+                    if (selectedCell.Value.Y + 1 <= room.height - 1) {
+                        selectedCell = new Point(selectedCell.Value.X, selectedCell.Value.Y + 1);
+                    }
+                    break;
+
+                case Keys.D:
+                    if (selectedCell.Value.X + 1 <= room.width - 1) {
+                        selectedCell = new Point(selectedCell.Value.X + 1, selectedCell.Value.Y);
+                    }
+                    break;
+
+                default:
+                    break;
+            }
+
+            if (selectedCell != null) {
+                selectedRoomCell = room.cells[selectedCell.Value.Y, selectedCell.Value.X];
+
+                PullInfo();
+            }
+            else {
+                CHK_wall.Enabled = false;
+                CBX_art.Enabled = false;
+                BTN_edit.Enabled = false;
+                BTN_globalApply.Enabled = false;
+                CBX_art.SelectedIndex = -1;
+            }
+
+            TLP_roomContainer.Refresh();
         }
     }
 }
