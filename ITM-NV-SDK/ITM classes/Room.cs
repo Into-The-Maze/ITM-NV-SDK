@@ -14,7 +14,7 @@ public class Room
         this.width = width;
         this.height = height;
         this.name = name;
-        cells = new Cell[width, height];
+        cells = new Cell[height, width];
     }
     [JsonConstructor]
     public Room() { }

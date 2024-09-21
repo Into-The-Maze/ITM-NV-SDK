@@ -20,3 +20,5 @@ C:\Users\dylan\Documents\GitHub\ITM-NV-SDK\ITM-NV-SDK\obj\Debug\net8.0-windows\I
 C:\Users\dylan\Documents\GitHub\ITM-NV-SDK\ITM-NV-SDK\obj\Debug\net8.0-windows\ITM-NV-SDK.csproj.AssemblyReference.cache
 C:\Users\dylan\Documents\GitHub\ITM-NV-SDK\ITM-NV-SDK\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
 C:\Users\dylan\Documents\GitHub\ITM-NV-SDK\ITM-NV-SDK\obj\Debug\net8.0-windows\ITM-NV-SDK.csproj.Up2Date
+C:\Users\dylan\Documents\GitHub\ITM-NV-SDK\ITM-NV-SDK\obj\Debug\net8.0-windows\ITM_NV_SDK.FRM_EDIT_CELL.resources
+C:\Users\dylan\Documents\GitHub\ITM-NV-SDK\ITM-NV-SDK\obj\Debug\net8.0-windows\ITM_NV_SDK.Properties.Resources.resources

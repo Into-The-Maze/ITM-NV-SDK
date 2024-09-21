@@ -28,12 +28,13 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FRM_ROOM));
             SPC_separator = new SplitContainer();
             TLP_roomContainer = new TableLayoutPanel();
+            RTB_console = new RichTextBox();
+            LBL_info = new Label();
             BTN_Export = new Button();
             BTN_edit = new Button();
             CBX_art = new ComboBox();
             BTN_globalApply = new Button();
             CHK_wall = new CheckBox();
-            LBL_info = new Label();
             ((System.ComponentModel.ISupportInitialize)SPC_separator).BeginInit();
             SPC_separator.Panel1.SuspendLayout();
             SPC_separator.Panel2.SuspendLayout();
@@ -52,14 +53,15 @@
             // 
             // SPC_separator.Panel2
             // 
+            SPC_separator.Panel2.Controls.Add(RTB_console);
             SPC_separator.Panel2.Controls.Add(LBL_info);
             SPC_separator.Panel2.Controls.Add(BTN_Export);
             SPC_separator.Panel2.Controls.Add(BTN_edit);
             SPC_separator.Panel2.Controls.Add(CBX_art);
             SPC_separator.Panel2.Controls.Add(BTN_globalApply);
             SPC_separator.Panel2.Controls.Add(CHK_wall);
-            SPC_separator.Size = new Size(650, 417);
-            SPC_separator.SplitterDistance = 416;
+            SPC_separator.Size = new Size(684, 461);
+            SPC_separator.SplitterDistance = 457;
             SPC_separator.TabIndex = 0;
             // 
             // TLP_roomContainer
@@ -79,11 +81,35 @@
             TLP_roomContainer.CellPaint += TLP_roomContainer_CellPaint;
             TLP_roomContainer.MouseDown += TLP_roomContainer_MouseDown;
             // 
+            // RTB_console
+            // 
+            RTB_console.BackColor = SystemColors.ControlDark;
+            RTB_console.Font = new Font("Segoe UI", 6.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            RTB_console.ForeColor = SystemColors.Window;
+            RTB_console.Location = new Point(15, 235);
+            RTB_console.Name = "RTB_console";
+            RTB_console.ReadOnly = true;
+            RTB_console.ScrollBars = RichTextBoxScrollBars.None;
+            RTB_console.Size = new Size(203, 162);
+            RTB_console.TabIndex = 6;
+            RTB_console.Text = "";
+            RTB_console.TextChanged += RTB_console_TextChanged;
+            // 
+            // LBL_info
+            // 
+            LBL_info.AutoSize = true;
+            LBL_info.ForeColor = SystemColors.ControlLight;
+            LBL_info.Location = new Point(15, 97);
+            LBL_info.Name = "LBL_info";
+            LBL_info.Size = new Size(189, 135);
+            LBL_info.TabIndex = 5;
+            LBL_info.Text = resources.GetString("LBL_info.Text");
+            // 
             // BTN_Export
             // 
             BTN_Export.BackColor = SystemColors.ControlDark;
             BTN_Export.ForeColor = SystemColors.ControlLightLight;
-            BTN_Export.Location = new Point(15, 359);
+            BTN_Export.Location = new Point(15, 403);
             BTN_Export.Name = "BTN_Export";
             BTN_Export.Size = new Size(203, 46);
             BTN_Export.TabIndex = 4;
@@ -100,6 +126,7 @@
             BTN_edit.TabIndex = 3;
             BTN_edit.Text = "Edit entities";
             BTN_edit.UseVisualStyleBackColor = false;
+            BTN_edit.Click += BTN_edit_Click;
             // 
             // CBX_art
             // 
@@ -109,6 +136,7 @@
             CBX_art.Name = "CBX_art";
             CBX_art.Size = new Size(143, 23);
             CBX_art.TabIndex = 2;
+            CBX_art.SelectedIndexChanged += CBX_art_SelectedIndexChanged;
             // 
             // BTN_globalApply
             // 
@@ -120,6 +148,7 @@
             BTN_globalApply.TabIndex = 1;
             BTN_globalApply.Text = "Apply this tileset to all similar tiles";
             BTN_globalApply.UseVisualStyleBackColor = false;
+            BTN_globalApply.Click += BTN_globalApply_Click;
             // 
             // CHK_wall
             // 
@@ -131,25 +160,18 @@
             CHK_wall.TabIndex = 0;
             CHK_wall.Text = "Wall?";
             CHK_wall.UseVisualStyleBackColor = true;
-            // 
-            // LBL_info
-            // 
-            LBL_info.AutoSize = true;
-            LBL_info.ForeColor = SystemColors.ControlLight;
-            LBL_info.Location = new Point(15, 97);
-            LBL_info.Name = "LBL_info";
-            LBL_info.Size = new Size(189, 135);
-            LBL_info.TabIndex = 5;
-            LBL_info.Text = resources.GetString("LBL_info.Text");
+            CHK_wall.CheckedChanged += CHK_wall_CheckedChanged;
             // 
             // FRM_ROOM
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ControlDarkDark;
-            ClientSize = new Size(650, 417);
+            ClientSize = new Size(684, 461);
             Controls.Add(SPC_separator);
+            DoubleBuffered = true;
             Icon = (Icon)resources.GetObject("$this.Icon");
+            MaximizeBox = false;
             Name = "FRM_ROOM";
             Text = "Design Room";
             SPC_separator.Panel1.ResumeLayout(false);
@@ -170,5 +192,6 @@
         private Button BTN_edit;
         private Button BTN_Export;
         private Label LBL_info;
+        private RichTextBox RTB_console;
     }
 }

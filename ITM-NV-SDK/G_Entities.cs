@@ -9,7 +9,8 @@ namespace ITM_NV_SDK
     public static class G_Entities
     {
         public static List<(int width, int height, string name)> entities = new() {
-            
+            (50, 20, "DBG_Table"),
+
         };
     }
 }

@@ -4,6 +4,9 @@
     <Compile Update="FRM_CONFIGURE_ROOM.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="FRM_EDIT_CELL.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="FRM_ROOM.cs">
       <SubType>Form</SubType>
     </Compile>
